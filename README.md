@@ -2,7 +2,7 @@
 
 ## link
 
-- Live site: url()
+- Live site: url(https://profile-card-component-main-d41.pages.dev/)
 
 ### Tools
 
