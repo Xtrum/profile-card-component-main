@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --Sans:'Kumbh Sans', sans-serif;
+    
+    /*====PRIMARY COLORS====*/
+    --D-cyan:hsl(185, 75%, 39%);
+    --VD-desat-blue: hsl(240, 33%, 19%);
+    --D-gray-blue:hsl(227, 10%, 46%);
+
+    /*====NEUTRAL COLOR====*/
+    --D-gray:hsl(0, 0%, 59%);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+/*----GENERAL----*/
+.F{
+    font-family: inherit;
+}
+
+body{
+    max-inline-size: 100vw;
+    block-size: 100vh;
+    font-family: var(--Sans);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-image:  url('/images/bg-pattern-top.svg'), url('/images/bg-pattern-bottom.svg');
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 70%, 70%;
+    background-position: -16.67rem -27.78rem, 36.11rem 19.4rem;
+    /* background-position: -300px -500px, 650px 350px; */
+    background-color: var(--D-cyan);
+}
+
+.container{
+    inline-size: 100%;
+    max-inline-size: 18rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-image: url('/images/bg-pattern-card.svg');
+    background-repeat: repeat-x;
+    background-color: white;
+    border-radius: 1rem;
+
+    box-shadow: 2px 25px 35px 0 var(--D-cyan);
+}
+
+.victor{
+    display: block;
+    border: 0.3rem solid white;
+    border-radius: 50%;
+    margin: 5.2rem auto 0;
+}
+
+.name{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.init{
+    font-weight: 700;
+    color: var(--VD-desat-blue);
+}
+
+.count{
+    font-weight: 400;
+    color: var(--D-gray-blue);
+}
+
+
+.state{
+    text-align: center;
+    font-size: small;
+    margin: 0 0 1rem;
+    color: var(--D-cyan);
+}
+
+
+hr{
+    color: var(--D-cyan);
+    inline-size: 100%;
+    margin: 0.5rem 0;
+    block-size: 0;
+    opacity: 0.3;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+    padding: 0 0.5rem 0.5rem;
+}
+
+.foots{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.foots h2{
+    font-weight: 700;
+    color: var(--VD-desat-blue);
+}
+
+.foots p{
+    font-size: x-small;
+    color: var(--D-cyan);
+    letter-spacing: 0.1rem;
+}
+
+@media (max-width: 30rem) {
+
+    .container{
+        min-inline-size: 16rem;
+    }
+}
